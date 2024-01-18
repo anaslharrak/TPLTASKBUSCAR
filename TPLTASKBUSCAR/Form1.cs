@@ -73,7 +73,12 @@ namespace TPLTASKBUSCAR
 
                 if (encontrado)
                 {
-                    txtResult.Text = hola;
+
+                    for (int i = 0; i <= contador; i++)
+                    {
+                        txtResult.Text += takeInfo(tasks[i].Result) + "\n";
+
+                    }
                 }
                 else {
                     txtResult.Text = "No Encontrado!";
@@ -91,6 +96,16 @@ namespace TPLTASKBUSCAR
 
                 return false;
             }
+        }
+        
+        private String takeInfo(string info) {
+            if (!info.Equals(""))
+            {
+                hola = info;
+                return hola;
+            }
+
+            return hola;
         }
     }
 }
