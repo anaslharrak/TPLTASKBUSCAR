@@ -14,8 +14,8 @@ namespace TPLTASKBUSCAR
     {
         string hola = "";
         public Form1()
-        {
-            InitializeComponent();
+        {  InitializeComponent();
+          
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -24,7 +24,9 @@ namespace TPLTASKBUSCAR
             {
                 txtResult.Text = "ERROR: Selecciona un campo mínimo";
             }
-            else {
+            else
+            {
+                txtResult.Text = "";
                 List<Task<string>> tasks = new List<Task<string>>();
                 int contador = 0;
                 bool encontrado = false;
@@ -73,7 +75,6 @@ namespace TPLTASKBUSCAR
 
                 if (encontrado)
                 {
-
                     for (int i = 0; i <= contador; i++)
                     {
                         txtResult.Text += takeInfo(tasks[i].Result) + "\n";

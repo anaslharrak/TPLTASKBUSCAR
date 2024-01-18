@@ -119,16 +119,18 @@
             // txtResult
             // 
             this.txtResult.Location = new System.Drawing.Point(170, 163);
+            this.txtResult.Multiline = true;  
             this.txtResult.Name = "txtResult";
             this.txtResult.ReadOnly = true;
-            this.txtResult.Size = new System.Drawing.Size(447, 20);
-            this.txtResult.TabIndex = 8;
+            this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical; 
+            this.txtResult.Size = new System.Drawing.Size(600, 200); 
+            this.txtResult.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 261);
+            this.ClientSize = new System.Drawing.Size(900, 400);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtbuscar);
