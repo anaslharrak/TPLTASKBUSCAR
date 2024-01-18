@@ -77,7 +77,7 @@ namespace TPLTASKBUSCAR
                 {
                     for (int i = 0; i <= contador; i++)
                     {
-                        txtResult.Text += takeInfo(tasks[i].Result) + "\n";
+                        txtResult.Text += "\n" + takeInfo(tasks[i].Result) + "\n";
 
                     }
                 }
